@@ -1,0 +1,7 @@
+Desnita
+- Akun hanya bisa didaftarkan dan di proses hanya untuk orang tua (KTP)
+
+
+
+- 1 kendaraan hanya untuk di 1 akun
+- proses pindah kendaraan
