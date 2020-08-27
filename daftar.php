@@ -59,7 +59,7 @@
                           <label for="exampleInputPassword2" wfd-id="20">Foto Anda</label>
                           <img id="image-preview" alt="image preview" style="width: 100%;height:auto;"/>
                           <br/>
-                          <input type="file" id="image-source" onchange="previewImage();" name="foto" required/>
+                          <input type="file" id="image-source" onchange="previewImage();" name="foto" accept="image/*" required/>
                         </div>
                         <div class="form-group mb-3 d-table mx-auto" wfd-id="16">
                           <div class="custom-control custom-checkbox mb-1" wfd-id="17">
@@ -71,7 +71,7 @@
                       </form>
                     </div>
                     <div class="auth-form__meta d-flex" wfd-id="6">
-                      <p>Klik disini untuk <a href="/login"> Login</a></p>
+                      <p>Klik disini untuk <a href="login.php"> Login</a></p>
                     </div>
                   </div>
                   
@@ -119,9 +119,9 @@ function previewImage() {
 
   $('#password, #confirm_password').on('keyup', function () {
   if ($('#password').val() == $('#confirm_password').val()) {
-    $('#message').html('Matching').css('color', 'green');
+    $('#message').html('Password Sama').css('color', 'green');
   } else 
-    $('#message').html('Not Matching').css('color', 'red');
+    $('#message').html('Password Tidak Sama!').css('color', 'red');
   });
 
   document.querySelector('#formRegister').addEventListener('submit', function(e) {

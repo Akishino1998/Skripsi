@@ -22,7 +22,7 @@
                         <form action="login-check.php" method="POST">
                           <div class="form-group">
                             <label for="exampleInputEmail1">Username</label>
-                            <input type="text" name="username" class="form-control" id="username" placeholder="Username">
+                            <input type="text" name="username" class="form-control" id="usernampe" placeholder="Username" value="<?php (isset($_GET['daftar'])? "$_GET['daftar']":"") ?>">
                           </div>
                           <div class="form-group">
                             <label for="exampleInputPassword1">Password</label>
@@ -38,3 +38,13 @@
               </div>
 </body>
 </html>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<?php 
+if(isset($_GET['daftar'])){
+?>
+<script>
+  swal("Sukses!", "Berhasil terdaftar!", "success");
+</script>
+<?php
+}
+?>

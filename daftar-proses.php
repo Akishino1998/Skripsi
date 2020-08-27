@@ -30,6 +30,6 @@ if($hasil <= 0){
     mysqli_query($link, $query);
 }
 
-header("Location:login.php");
+header("Location:login.php?daftar=".$username);
 
 ?>
