@@ -1,2 +1,2 @@
 # Skripsi
-Skripsi yang dikerjakan dengan cinta
+Skripsi yang dikerjakan dengan cintaku padamu
